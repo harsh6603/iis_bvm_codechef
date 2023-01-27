@@ -1,0 +1,12 @@
+Server connected at \\.\pipe\a44edb4b-6e61-4ffe-80af-eabc572a4993
+{ email: 'harsh123@gmail.com', password: 'Harsh$123' }
+connected.
+{
+  _id: new ObjectId("63bc4e50170d519972ebbf86"),
+  name: 'Harsh Shah',
+  email: 'harsh123@gmail.com',
+  password: '$2a$10$tL361PTdpxEHEE..UX.aQORNdIq3VTh/H0PiYb2NHtVa8am2n4l0.',
+  type: 'normal',
+  date: 2023-01-09T17:26:41.243Z,
+  __v: 0
+}

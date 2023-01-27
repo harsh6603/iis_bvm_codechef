@@ -12,12 +12,16 @@ app.use(cors({
     origin:"*"
 }));
 
+app.get("/backend",(req,res) => {
+    res.sendFile(path.resolve(__dirname,"dist","index.html"))
+})
+
 //database connection
 require("./db");
 
-app.use("/api/user",require("./modules/routes/routeUser"))
-app.use("/api/event",require("./modules/routes/routeEvent"))
-app.use("/api/solution",require("./modules/routes/routeSolution"))
+app.use("/backend/api/user",require("./modules/routes/routeUser"))
+app.use("/backend/api/event",require("./modules/routes/routeEvent"))
+app.use("/backend/api/solution",require("./modules/routes/routeSolution"))
 
 //set static folder
 app.use(express.static("dist"));

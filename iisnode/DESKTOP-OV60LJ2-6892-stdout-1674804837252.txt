@@ -1,0 +1,66 @@
+Server connected at \\.\pipe\b278eda8-1e20-407e-b394-4280ca8beeea
+connected.
+{ email: 'harsh060603forall@gmail.com', password: 'Harsh$123' }
+{
+  _id: new ObjectId("63bc0309cc64e55537c213fb"),
+  name: 'Harsh Thakkar',
+  email: 'harsh060603forall@gmail.com',
+  password: '$2a$10$On2fGW7xgw3v6vhpu2ZY1.jIEFW7sJbR4p7bTFvLBR.2Ocyawg7qq',
+  type: 'super',
+  date: 2023-01-09T12:05:29.455Z,
+  __v: 0
+}
+{
+  name: 'CODESPRINT',
+  duration: '01:00',
+  startingTime: '11:00',
+  endingTime: '12:00',
+  date: '2022-09-18',
+  description: '"A perfect code is not achieved when there is nothing to add, but rather when there is nothing more to takeaway."\r\n' +
+    '\r\n' +
+    'Hola fellow chefs!!👋\r\n' +
+    '\r\n' +
+    'Codechef BVM-Chapter brings you the opportunity to showcase your skills by taking your code to perfection, as we present before you "Codesprint". So buckle up!!!! And give a best shot...\r\n' +
+    'It is a competitive coding event where you can evaluate yourself with incremental difficulty of codes, and a wide palette of logical application.\r\n' +
+    '\r\n' +
+    'Therefore, fasten your seatbelts to experience a whole new coding environment.\t\r\n' +
+    'Don’t miss out a wonderful opportunity to not only showcase your skills but to get an in-hand experience of a coding contest.',
+  files1: 'undefined',
+  image: '1674804995345-2nd Year.png'
+}
+{
+  name: 'CODESPRINT',
+  duration: '01:00',
+  startingTime: '11:00',
+  endingTime: '12:00',
+  date: '2022-09-18',
+  description: '"A perfect code is not achieved when there is nothing to add, but rather when there is nothing more to takeaway."\r\n' +
+    '\r\n' +
+    'Hola fellow chefs!!👋\r\n' +
+    '\r\n' +
+    'Codechef BVM-Chapter brings you the opportunity to showcase your skills by taking your code to perfection, as we present before you "Codesprint". So buckle up!!!! And give a best shot...\r\n' +
+    'It is a competitive coding event where you can evaluate yourself with incremental difficulty of codes, and a wide palette of logical application.\r\n' +
+    '\r\n' +
+    'Therefore, fasten your seatbelts to experience a whole new coding environment.\t\r\n' +
+    'Don’t miss out a wonderful opportunity to not only showcase your skills but to get an in-hand experience of a coding contest.',
+  files1: 'undefined',
+  image: '1674805050558-codeeve.png'
+}
+{
+  name: 'CODESPRINT',
+  duration: '01:00',
+  startingTime: '11:00',
+  endingTime: '12:00',
+  date: '2022-09-18',
+  description: '"A perfect code is not achieved when there is nothing to add, but rather when there is nothing more to takeaway."\r\n' +
+    '\r\n' +
+    'Hola fellow chefs!!👋\r\n' +
+    '\r\n' +
+    'Codechef BVM-Chapter brings you the opportunity to showcase your skills by taking your code to perfection, as we present before you "Codesprint". So buckle up!!!! And give a best shot...\r\n' +
+    'It is a competitive coding event where you can evaluate yourself with incremental difficulty of codes, and a wide palette of logical application.\r\n' +
+    '\r\n' +
+    'Therefore, fasten your seatbelts to experience a whole new coding environment.\t\r\n' +
+    'Don’t miss out a wonderful opportunity to not only showcase your skills but to get an in-hand experience of a coding contest.',
+  files1: 'undefined',
+  image: '1674805070527-codesprint.jpeg'
+}

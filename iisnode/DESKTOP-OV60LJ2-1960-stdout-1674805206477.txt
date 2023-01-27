@@ -1,0 +1,12 @@
+Server connected at \\.\pipe\5c1ba523-89e8-4bbd-968b-5778e630d891
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at Connection.openUri (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\connection.js:695:11)
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\index.js:409:10
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\index.js:1262:10)
+    at Mongoose.connect (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\index.js:408:20)
+    at Object.<anonymous> (D:\react apps\deploy\backend_new\db.js:4:10)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)

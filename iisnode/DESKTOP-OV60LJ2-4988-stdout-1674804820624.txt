@@ -1,0 +1,2 @@
+Server connected at \\.\pipe\3110f302-0084-42bd-a5c3-02ff9fc6debb
+connected.

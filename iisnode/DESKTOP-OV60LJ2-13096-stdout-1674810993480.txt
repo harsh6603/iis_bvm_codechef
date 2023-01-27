@@ -1,0 +1,134 @@
+Server connected at \\.\pipe\c5f905fa-6c91-4309-bb88-ce880155aae1
+connected.
+{ email: 'harsh060603forall@gmail.com', password: 'Harsh$123' }
+{
+  _id: new ObjectId("63bc0309cc64e55537c213fb"),
+  name: 'Harsh Thakkar',
+  email: 'harsh060603forall@gmail.com',
+  password: '$2a$10$On2fGW7xgw3v6vhpu2ZY1.jIEFW7sJbR4p7bTFvLBR.2Ocyawg7qq',
+  type: 'super',
+  date: 2023-01-09T12:05:29.455Z,
+  __v: 0
+}
+{ email: 'harsh060603forall@gmail.com', password: 'Harsh$123' }
+{
+  _id: new ObjectId("63bc0309cc64e55537c213fb"),
+  name: 'Harsh Thakkar',
+  email: 'harsh060603forall@gmail.com',
+  password: '$2a$10$On2fGW7xgw3v6vhpu2ZY1.jIEFW7sJbR4p7bTFvLBR.2Ocyawg7qq',
+  type: 'super',
+  date: 2023-01-09T12:05:29.455Z,
+  __v: 0
+}
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\model.js:5286:32)
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:4930:21
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:4929:10)
+    at Query.then (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:5012:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-5qcfnbh-shard-00-00.lib5snr.mongodb.net:27017' => [ServerDescription],
+      'ac-5qcfnbh-shard-00-01.lib5snr.mongodb.net:27017' => [ServerDescription],
+      'ac-5qcfnbh-shard-00-02.lib5snr.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-f7p42z-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000115"),
+    maxSetVersion: 7,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\model.js:5286:32)
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:4930:21
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:4929:10)
+    at Query.then (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:5012:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-5qcfnbh-shard-00-00.lib5snr.mongodb.net:27017' => [ServerDescription],
+      'ac-5qcfnbh-shard-00-01.lib5snr.mongodb.net:27017' => [ServerDescription],
+      'ac-5qcfnbh-shard-00-02.lib5snr.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-f7p42z-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000115"),
+    maxSetVersion: 7,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\model.js:5286:32)
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:4930:21
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:4929:10)
+    at Query.then (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:5012:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-5qcfnbh-shard-00-00.lib5snr.mongodb.net:27017' => [ServerDescription],
+      'ac-5qcfnbh-shard-00-01.lib5snr.mongodb.net:27017' => [ServerDescription],
+      'ac-5qcfnbh-shard-00-02.lib5snr.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-f7p42z-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000115"),
+    maxSetVersion: 7,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\model.js:5286:32)
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:4930:21
+    at D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:4929:10)
+    at Query.then (D:\react apps\deploy\backend_new\node_modules\mongoose\lib\query.js:5012:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-5qcfnbh-shard-00-00.lib5snr.mongodb.net:27017' => [ServerDescription],
+      'ac-5qcfnbh-shard-00-01.lib5snr.mongodb.net:27017' => [ServerDescription],
+      'ac-5qcfnbh-shard-00-02.lib5snr.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-f7p42z-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000115"),
+    maxSetVersion: 7,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}

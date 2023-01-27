@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"DESKTOP-OV60LJ2-11212-stderr-1674805292953.txt","computername":"DESKTOP-OV60LJ2","pid":11212,"type":"stderr","created":1674805292953},{"file":"DESKTOP-OV60LJ2-11212-stdout-1674805292949.txt","computername":"DESKTOP-OV60LJ2","pid":11212,"type":"stdout","created":1674805292949},{"file":"DESKTOP-OV60LJ2-13096-stderr-1674810993492.txt","computername":"DESKTOP-OV60LJ2","pid":13096,"type":"stderr","created":1674810993492},{"file":"DESKTOP-OV60LJ2-13096-stdout-1674810993480.txt","computername":"DESKTOP-OV60LJ2","pid":13096,"type":"stdout","created":1674810993480},{"file":"DESKTOP-OV60LJ2-13188-stderr-1674804784336.txt","computername":"DESKTOP-OV60LJ2","pid":13188,"type":"stderr","created":1674804784336},{"file":"DESKTOP-OV60LJ2-13188-stdout-1674804784333.txt","computername":"DESKTOP-OV60LJ2","pid":13188,"type":"stdout","created":1674804784333},{"file":"DESKTOP-OV60LJ2-14136-stderr-1674806107816.txt","computername":"DESKTOP-OV60LJ2","pid":14136,"type":"stderr","created":1674806107816},{"file":"DESKTOP-OV60LJ2-14136-stdout-1674806107813.txt","computername":"DESKTOP-OV60LJ2","pid":14136,"type":"stdout","created":1674806107813},{"file":"DESKTOP-OV60LJ2-1960-stderr-1674805206481.txt","computername":"DESKTOP-OV60LJ2","pid":1960,"type":"stderr","created":1674805206481},{"file":"DESKTOP-OV60LJ2-1960-stdout-1674805206477.txt","computername":"DESKTOP-OV60LJ2","pid":1960,"type":"stdout","created":1674805206477},{"file":"DESKTOP-OV60LJ2-27100-stderr-1674806226581.txt","computername":"DESKTOP-OV60LJ2","pid":27100,"type":"stderr","created":1674806226581},{"file":"DESKTOP-OV60LJ2-27100-stdout-1674806226577.txt","computername":"DESKTOP-OV60LJ2","pid":27100,"type":"stdout","created":1674806226577},{"file":"DESKTOP-OV60LJ2-28000-stderr-1674807078475.txt","computername":"DESKTOP-OV60LJ2","pid":28000,"type":"stderr","created":1674807078475},{"file":"DESKTOP-OV60LJ2-28000-stdout-1674807078472.txt","computername":"DESKTOP-OV60LJ2","pid":28000,"type":"stdout","created":1674807078472},{"file":"DESKTOP-OV60LJ2-28528-stderr-1674806172517.txt","computername":"DESKTOP-OV60LJ2","pid":28528,"type":"stderr","created":1674806172517},{"file":"DESKTOP-OV60LJ2-28528-stdout-1674806172514.txt","computername":"DESKTOP-OV60LJ2","pid":28528,"type":"stdout","created":1674806172514},{"file":"DESKTOP-OV60LJ2-4988-stderr-1674804820630.txt","computername":"DESKTOP-OV60LJ2","pid":4988,"type":"stderr","created":1674804820630},{"file":"DESKTOP-OV60LJ2-4988-stdout-1674804820624.txt","computername":"DESKTOP-OV60LJ2","pid":4988,"type":"stdout","created":1674804820624},{"file":"DESKTOP-OV60LJ2-6892-stderr-1674804837342.txt","computername":"DESKTOP-OV60LJ2","pid":6892,"type":"stderr","created":1674804837342},{"file":"DESKTOP-OV60LJ2-6892-stdout-1674804837252.txt","computername":"DESKTOP-OV60LJ2","pid":6892,"type":"stdout","created":1674804837252},{"file":"DESKTOP-OV60LJ2-9680-stderr-1674805605925.txt","computername":"DESKTOP-OV60LJ2","pid":9680,"type":"stderr","created":1674805605925},{"file":"DESKTOP-OV60LJ2-9680-stdout-1674805605923.txt","computername":"DESKTOP-OV60LJ2","pid":9680,"type":"stdout","created":1674805605923}];
+        var lastUpdated = 1674810994772;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>
